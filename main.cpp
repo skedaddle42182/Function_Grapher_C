@@ -52,8 +52,6 @@ int main()
 
 	engine.grid.initialize_line(-100, 100, "e * atan(x)");
 
-	engine.grid.initialize_line(-100, 100, "e * acos(x)");
-
 	FunctionGrapher grapher;
 
 	grapher.loop(engine, [&]() {
