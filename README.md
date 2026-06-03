@@ -1,6 +1,6 @@
 # Function Grapher C++
 
-A lightweight and efficient function graphing library built with SDL2 and modern C++.
+A lightweight and efficient function graphing library built with SDL2 and C++.
 
 This project focuses on fast function visualization, clean architecture, and real-time graph rendering. Functions are converted into cached screen-space points and only recalculated when necessary, reducing unnecessary computation during rendering.
 
