@@ -103,7 +103,7 @@ For a function with `n` samples:
 
 - Point generation: `O(n)`
 - Rendering: `O(n)`
-- Grid calculations: `O(1)`
+- Grid calculations: `O(n)`
 
 The graphing calculations are already asymptotically optimal since every point must be sampled at least once.
 
