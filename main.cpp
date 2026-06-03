@@ -34,7 +34,7 @@ int main()
 		return e * sin(x);
 	};
 
-	std::function<double(double)> sound_wave_function = [](double x)
+	std::function<double(double)> wave_function = [](double x)
 	{
 		return (pow(e, (-0.1 * x)) * sin(5 * x));
 	};
@@ -42,11 +42,6 @@ int main()
 	std::function<double(double)> atan_function = [](double x)
 	{
 		return e * atan(x);
-	};
-
-	std::function<double(double)> atan_cos_function = [](double x)
-	{
-		return e * acos(x);
 	};
 
 	Engine engine(window_properties, grid_properties);
@@ -66,13 +61,11 @@ int main()
 		
 		engine.grid.draw_axis(engine.window, engine.renderer, Colors::blue);
 		
-		engine.grid.add_function(engine.renderer, engine.window, 0.001, sound_wave_function, Colors::white, "pow(e, (-0.1 * x)) * sin(5 * x)");
+		engine.grid.add_function(engine.renderer, engine.window, 0.001, wave_function, Colors::white, "pow(e, (-0.1 * x)) * sin(5 * x)");
 		
 		engine.grid.add_function(engine.renderer, engine.window, 0.001, sin_function, Colors::white, "e * sin(x)");
 		
 		engine.grid.add_function(engine.renderer, engine.window, 0.001, atan_function, Colors::white, "e * atan(x)");
-		
-		engine.grid.add_function(engine.renderer, engine.window, 0.001, atan_cos_function, Colors::white, "e * acos(x)");
 		
 		engine.renderer.set_clear_color(Colors::black);
 	});
