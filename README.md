@@ -105,14 +105,6 @@ When the graph does not need updating:
 
 This reduces CPU usage and avoids unnecessary recalculation every frame.
 
-### Complexity
-
-For a function with `n` samples:
-
-- Point generation: `O(n)`
-- Rendering: `O(n)`
-- Grid calculations: `O(n)`
-
 The graphing calculations are already asymptotically optimal since every point must be sampled at least once.
 
 ## Current Capabilities
