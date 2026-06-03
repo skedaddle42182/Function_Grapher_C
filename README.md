@@ -4,6 +4,12 @@ A lightweight and efficient function graphing library built with SDL2 and modern
 
 This project focuses on fast function visualization, clean architecture, and real-time graph rendering. Functions are converted into cached screen-space points and only recalculated when necessary, reducing unnecessary computation during rendering.
 
+<img width="801" height="667" alt="Screenshot 2026-06-02 180429" src="https://github.com/user-attachments/assets/fe8e058f-cb0c-4a77-bba5-b028d4d678ba" />
+
+<img width="798" height="668" alt="Screenshot 2026-06-02 173212" src="https://github.com/user-attachments/assets/3afc0c07-2640-4bdb-a8fe-9b873cd37fdb" />
+
+<img width="800" height="627" alt="image" src="https://github.com/user-attachments/assets/d458f869-765a-4e30-b591-987d66ca824f" />
+
 ## Features
 
 - Real-time function graphing
